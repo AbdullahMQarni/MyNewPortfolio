@@ -12,9 +12,8 @@ this project is simple, I built Website portfolio to help me to find jobs with s
 2. React.js
 3. Version Control(Git)
 4. Deployment (Github)
-5. HTML
-6. Styling (CSS)
-7. Javascript
+5. Styling (CSS)
+6. Javascript
 
 # Pages in website
 ## `Home Page`
