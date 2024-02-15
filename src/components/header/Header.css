@@ -1,0 +1,102 @@
+/* Common styles for both desktop and mobile */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fira Code', monospace;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 70px 0px 70px;
+  }
+  
+  header h1 {
+    color: var(--accent);
+  }
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-icon.open div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 16px);
+  }
+  
+  .menu-icon.open div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.open div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -16px);
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--text);
+    margin: 6px 0;
+    
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 10px;
+  }
+  
+  nav a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 750px) {
+    header h1{
+        font-size: 25px;
+    }
+    header {
+      flex-direction: row;
+      text-align: center;
+      margin: 10px 30px 10px 30px;
+    }
+  
+    nav {
+      display: none;
+      width: 100%;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+  
+    .menu-icon.open + nav {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav li {
+      display: block;
+      margin: 10px 10px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+  }
+  
