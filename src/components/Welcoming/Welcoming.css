@@ -1,0 +1,84 @@
+.rotate {  
+    animation-name: ani-rotate;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes ani-rotate {
+    0%{ transform: rotate(0); }
+    100%{ transform: rotate(360deg); }  
+}
+
+.Welcoming{
+    margin-top: -100px;
+    margin-bottom: -150px;
+}
+
+.circle{
+    width: 700px;
+    height: auto;
+}
+
+.textContainer{
+    width: 60%;
+}
+
+.container h2{
+    color: var(--accent);
+}
+
+.Social {
+    font-size: 55px;
+    color: var(--text);
+    margin-right: 30px;
+}
+
+.Social:hover{
+    color: var(--accent);
+    transform: scale(1.2);
+}
+
+.container h3{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.container span{
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width: 750px) {
+    .containerRow{
+        flex-direction: column;
+    }
+    
+    .circle{
+    width: 280px;
+    height: auto;
+    }
+
+    .textContainer{
+    width: 80%;
+    }
+    .Social {
+    font-size: 35px;
+    color: var(--text);
+    margin-right: 0px;
+    margin-bottom: 10px;
+    }
+
+    .container h2{
+        font-size: 23px;
+    }
+
+    .container h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+}

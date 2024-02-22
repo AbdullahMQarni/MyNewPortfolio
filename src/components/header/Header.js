@@ -18,9 +18,9 @@ export default function Header() {
         </div>
         <nav className={`${isMenuOpen ? 'open' : ''}`}>
             <ul>
-            <li><a href='#About-Me'>About Me</a></li>
-            <li><a href='#Portfolio'>Portfolio</a></li>
-            <li><a href='#Lets-Work'>Lets Work</a></li>
+                <li><a href='#About-Me'>About Me</a></li>
+                <li><a href='#Portfolio'>Portfolio</a></li>
+                <li><a href='#Lets-Work'>Lets Work</a></li>
             </ul>
         </nav>
         </header>

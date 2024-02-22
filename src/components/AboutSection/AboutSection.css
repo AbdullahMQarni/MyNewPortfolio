@@ -1,0 +1,50 @@
+.AboutSectionTitle{
+    color: var(--accent);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.personal{
+    margin-top: 100px;
+    width: 800px;
+    height: auto;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 5px;
+    border-color: var(--2ndBG);
+    border-style: solid;
+    margin-right: 70px;
+}
+
+.textContainer p{
+    width: 70%;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 750px) {
+    .personal{
+    margin-top: 100px;
+    width: 390px;
+    height: auto;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 5px;
+    border-right: 0px;
+    border-color: var(--2ndBG);
+    border-style: solid;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    }
+
+    .containerRow{
+        flex-direction: column;
+    }
+
+    .textContainer p{
+    width: 90%;
+    font-size: 14px;
+
+}
+}
