@@ -23,6 +23,27 @@
     line-height: 30px;
 }
 
+
+
+.AboutPage{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: var(--2ndBG);
+    color: var(--accent);
+    padding: 20px 13px;
+    border: 2px solid var(--accent);
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.AboutPage:hover {
+    color: var(--text);
+    background-color: var(--accent);
+    font-size: 25px;
+}
+
 @media screen and (max-width: 750px) {
     .personal{
     margin-top: 100px;

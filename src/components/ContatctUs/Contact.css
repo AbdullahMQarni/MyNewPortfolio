@@ -1,0 +1,47 @@
+.ContactUsTitle span {
+    color: #00adb5;
+}
+
+.card{
+    background: rgba( 57, 62, 70, 0.55 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-left: 25px;
+    transition: all 0.5s;
+}
+
+.card:hover{
+    border: 3px solid var(--accent);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text);
+
+}
+
+.card .Title{
+    color: var(--accent);
+    margin: 20px 20px 60px 20px;
+}
+
+.CardContainer{
+    margin-bottom: 100px;
+}
+
+
+@media screen and (max-width: 740px){
+    .card{
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+
+    .ContactUsTitle{
+        text-align: center;
+    }
+    .ContactUsTitle span{
+        display: block;
+    }
+}

@@ -13,6 +13,9 @@ export default function AboutSection(){
                     <p>My coding journey began during my university days, and I’ve set my sights on becoming a Full-Stack developer specializing in the MERN Stack.</p>
                 </div>
             </div>
+            <div className="container">
+                <a href="#ToAboutMePage" className="AboutPage">For More Click Me</a>
+            </div>
         </div>
         </>
     )
