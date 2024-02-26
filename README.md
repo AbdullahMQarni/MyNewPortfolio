@@ -14,6 +14,7 @@ this project is simple, I built Website portfolio to help me to find jobs with s
 4. Deployment (Github)
 5. Styling (CSS)
 6. Javascript
+7. ReactIcons
 
 # Pages in website
 ## `Home Page`
