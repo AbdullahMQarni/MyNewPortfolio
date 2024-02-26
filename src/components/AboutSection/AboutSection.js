@@ -4,7 +4,7 @@ import './AboutSection.css'
 export default function AboutSection(){
     return(
         <>
-        <div className="section">
+        <div className="section aboutSection">
             <h1 className='AboutSectionTitle'>{`<About Me />`}</h1>
             <div className="containerRow">
                 <img className="personal" src={personalPhto} alt="A picture of me"/>

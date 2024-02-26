@@ -1,0 +1,55 @@
+.projectsSection{
+    background: rgb(57,62,70);
+    background: linear-gradient(0deg, rgba(57,62,70,1) 0%, rgba(57,62,70,1) 100%);
+}
+
+.titlePorjects{
+    color: var(--accent);
+    font-size: 2em;
+}
+
+.projButton{
+    margin-bottom: 10px;
+}
+
+#projects button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--accent);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#projects button:hover {
+    background-color: var(--2ndBG);
+    color: var(--text);
+}
+
+#projects button.active {
+    background-color: var(--BG);
+    color: var(--accent);
+}
+
+#tab-content {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: var(--BG);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+#tab-content img{
+    display: inline;
+    margin-right: 15px;
+    width: 80%;
+    height: 80%;
+}
+
+.tabDesc{
+    width: 80%;
+}

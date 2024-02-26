@@ -3,7 +3,7 @@ import Cards from './Cards'
 
 export default function ContactUs(){
     return(
-        <>
+        <div className='section contactUS'>
         <div className="container">
             <h3 className="ContactUsTitle">Interested to work together or business? <span>{`< let’s keep in touch />`}</span></h3>
             <div className='containerRow CardContainer'>
@@ -12,6 +12,6 @@ export default function ContactUs(){
                 <Cards Title={'Contact Number'} Description={'0581882912'} />
             </div>
         </div>
-        </>
+        </div>
     )
 }

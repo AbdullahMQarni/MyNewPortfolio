@@ -4,6 +4,11 @@
     margin-top: 100px;
 }
 
+.aboutSection{
+    background: rgb(57,62,70);
+    background: linear-gradient(0deg, rgba(57,62,70,1) 0%, rgba(34,40,49,1) 100%);
+}
+
 .personal{
     margin-top: 100px;
     width: 800px;
