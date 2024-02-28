@@ -26,10 +26,10 @@ export default function Welcoming() {
         <div className='container'>
             <h2>{`< Social Media Accounts />`}</h2>
             <div className='containerRow'>
-                <SocialMediaIcon Icon={<FaGithub />} Link={'https://github.com/AbdullahMQarni'} />
-                <SocialMediaIcon Icon={<FaXTwitter />} Link={'https://twitter.com/AbdullahMQarni'} />
-                <SocialMediaIcon Icon={<FaYoutube />} Link={'https://www.youtube.com/@UltraTech-UT'} />
-                <SocialMediaIcon Icon={<FaLinkedin />} Link={'https://linkedin.com/in/abdullahmalqarni'} />
+                <li className="Social"><SocialMediaIcon Icon={<FaGithub />} Link={'https://github.com/AbdullahMQarni'} /></li>
+                <li className="Social"><SocialMediaIcon Icon={<FaXTwitter />} Link={'https://twitter.com/AbdullahMQarni'} /></li>
+                <li className="Social"><SocialMediaIcon Icon={<FaYoutube />} Link={'https://www.youtube.com/@UltraTech-UT'} /></li>
+                <li className="Social"><SocialMediaIcon Icon={<FaLinkedin />} Link={'https://linkedin.com/in/abdullahmalqarni'} /></li>
             </div>
 
         </div>

@@ -9,7 +9,11 @@
 }
 
 .projButton{
+    display: flex;
     margin-bottom: 10px;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: center;
 }
 
 #projects button {
@@ -22,6 +26,10 @@
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 #projects button:hover {
@@ -39,17 +47,42 @@
     border-radius: 6px;
     background-color: var(--BG);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    width: 90%;
+    width: 88%;
     margin-bottom: 100px;
 }
 
 #tab-content img{
     display: inline;
     margin-right: 15px;
-    width: 80%;
-    height: 80%;
+    width: 30%;
+    height: auto;
 }
 
 .tabDesc{
-    width: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tabDesc button{
+    width: 150px;
+    font-size: .75rem;
+    text-align: center;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.tabDesc a{
+    color:var(--accent);
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    #tab-content img{
+        display: inline;
+        margin-right: 15px;
+        width: 80%;
+        height: auto;
+    }
 }

@@ -1,17 +1,45 @@
-import test from './ProjectsPic/Color Hunt Palette 222831393e4600adb5eeeeee.png'
+import MyKAU from './ProjectsPic/MyKAU.PNG'
+import MyWebsite from './ProjectsPic/MyWebsite.PNG'
+import OdusPlus from './ProjectsPic/OdusPlus.png'
+import MostViews from './ProjectsPic/MostViews.png'
+import Excel from './ProjectsPic/Excel.png'
+import PowerBI from './ProjectsPic/PowerBI.png'
 
 export const data = {
-    hello:{
-        img: test,
-        title:'Hello world',
-        content: 'test for bla bla bla',
+    MyKAU:{
+        img: MyKAU,
+        link: 'http://hci.abdullahqarni.com/',
+        title:'MyKAU Alternative Design',
+        content: 'The focus is on enhancing both the User Interface (UI) and User Experience (UX) of the MyKAU mobile app, with special consideration for Human-Computer Interaction (HCI) principles. The design was converted into a web prototype for testing using HTML, CSS, and Javascript.',
     },
-    python:{
-        img: test,
-        title:'Python Hello world',
-        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu felis, porta ut condimentum id, faucibus sit amet nisl. Pellentesque aliquam rutrum metus et fringilla. Etiam viverra, libero blandit eleifend rhoncus, justo neque feugiat massa, quis suscipit erat dui in purus. Sed posuere, nulla eu imperdiet malesuada, odio quam dictum justo, vitae pellentesque massa urna eget turpis. Mauris eu tempus quam, id bibendum felis. Aliquam erat volutpat. Aenean viverra convallis leo, sit amet malesuada tellus rhoncus sit amet. Maecenas arcu nisl, suscipit eu augue sed, dapibus ornare dui. Mauris nec elementum ex. Vivamus bibendum aliquam erat ac dapibus.
-
-        Donec urna lacus, convallis at ullamcorper vel, mollis sed sem. Morbi eleifend odio eu nulla tincidunt ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ultrices congue molestie. Aenean neque tortor, rutrum vel augue eu, semper accumsan felis. Aliquam erat volutpat. Maecenas ullamcorper nisl non arcu imperdiet, sed sodales massa ultrices. Mauris placerat imperdiet nulla in viverra. Praesent in maximus dolor. Morbi sodales nibh justo, pretium malesuada eros ullamcorper vitae.`,
+    MyWebsite:{
+        img: MyWebsite,
+        link: 'https://abdullahqarni.com/',
+        title:'Build My Website',
+        content: `Embarking on the journey of building my personal website, I employed HTML, CSS, Javascript and ReactJS to create a dynamic platform showcasing my projects and skills. This endeavor is a culmination of applying the knowledge acquired, providing a comprehensive representation of my capabilities. The website serves as a virtual portfolio, allowing visitors to explore my projects and gain insights into the skills I've honed throughout my learning journey. Dive into the digital realm and discover the embodiment of my technical prowess and creativity.`,
+    },
+    OdusPlus:{
+        img: OdusPlus,
+        link: 'https://hcifinalproject.wixsite.com/odus-plus-new-design/',
+        title:'Odus Plus Alternative Design',
+        content: `Undertaking the transformation of Odus Plus, our alternative design prioritizes key criteria such as reorganizing services, improving accessibility, boosting performance, and enhancing website responsiveness using Wix.`,
+    },
+    MostViews:{
+        img: MostViews,
+        link: 'https://www.youtube.com/watch?v=dhzpq00x9GM',
+        title:'Best Video Views',
+        content: `"BEST NOTE TAKING APP" is My best video views at my channel at Youtube`,
+    },
+    Excel:{
+        img: Excel,
+        link: 'https://github.com/AbdullahMQarni/smallProjectDataAnalyzing.git',
+        title:'Excel Project',
+        content: `Embarking on a comprehensive data analysis journey, this project focuses on extracting meaningful insights through various Excel functionalities and providing it with an easy way to understand.`,
+    },
+    PowerBI:{
+        img: PowerBI,
+        link: 'https://github.com/AbdullahMQarni/powerbiProject.git',
+        title:'PowerBI Projects',
+        content: `The primary focus was on transforming raw data into actionable insights by leveraging data cleaning, analysis, and the development of an intuitive dashboard.`,
     },
 }
-

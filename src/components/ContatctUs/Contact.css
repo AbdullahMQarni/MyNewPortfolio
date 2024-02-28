@@ -5,6 +5,7 @@
 .contactUS{
     background: rgb(34,40,49);
     background: linear-gradient(0deg, rgba(34,40,49,1) 0%, rgba(57,62,70,1) 100%);
+    min-height: 45vh;
 }
 
 .card{
@@ -14,7 +15,7 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin-left: 25px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .card:hover{
@@ -37,7 +38,7 @@ a{
 }
 
 
-@media screen and (max-width: 740px){
+@media screen and (max-width: 768px){
     .card{
         margin-left: 0px;
         margin-bottom: 25px;

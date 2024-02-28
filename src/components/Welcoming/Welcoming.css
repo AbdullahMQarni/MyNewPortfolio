@@ -36,11 +36,16 @@
     color: var(--text);
     margin-right: 30px;
     transition: all 0.5s;
+    list-style: none;
 }
 
-.Social:hover{
-    color: var(--accent);
+.justButton{
+    transition: all 0.5s;
+}
+
+.Social .justButton:hover{
     transform: scale(1.2);
+    color: var(--accent);
 }
 
 .container h3{
@@ -53,7 +58,7 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     .containerRow{
         flex-direction: column;
     }
