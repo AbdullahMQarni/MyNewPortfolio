@@ -32,3 +32,11 @@ body {
   align-items: center;
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+h2, h1, h3{
+  color: var(--accent);
+}
