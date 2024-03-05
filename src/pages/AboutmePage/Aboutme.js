@@ -13,7 +13,7 @@ function Aboutme() {
         <>
         <Header></Header>
         <div className="sectionOne">
-        <div className="section aboutSection">
+        <div className="section">
             <h1 className='AboutSectionTitle'>{`<About Me />`}</h1>
             <div className="containerRow">
                 <img className="personal" src={personalPhto} alt="A picture of me"/>
@@ -24,8 +24,8 @@ function Aboutme() {
             </div>
         </div>
         </div>
-        <div className="sectionTwo">
-            <div className="section">
+        <div className="sectionTwo ">
+            <div className="section ">
                 <h2 className="center">{`<My Resume />`}</h2>
                 <div className="TabButtonsAbout">
 

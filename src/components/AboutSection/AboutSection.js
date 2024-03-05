@@ -1,5 +1,6 @@
 import personalPhto from "./PersonalPhoto.jpg";
 import './AboutSection.css'
+import {Link} from 'react-router-dom'
 
 export default function AboutSection(){
     return(
@@ -14,7 +15,7 @@ export default function AboutSection(){
                 </div>
             </div>
             <div className="container">
-                <a href="#ToAboutMePage" className="AboutPage">For More Click Me</a>
+                <Link className="AboutPage" to="/aboutme"><a href="#ToAboutMePage">For More Click Me</a></Link>
             </div>
         </div>
         </>

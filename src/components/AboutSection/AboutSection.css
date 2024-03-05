@@ -43,6 +43,14 @@
     transition: all 0.5s;
 }
 
+.AboutPage a{
+    color: var(--accent);
+}
+
+.AboutPage a:hover{
+    color: var(--text);
+}
+
 .AboutPage:hover {
     color: var(--text);
     background-color: var(--accent);
