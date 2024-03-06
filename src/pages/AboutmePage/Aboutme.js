@@ -1,13 +1,39 @@
-import React from "react";
-import Header from '../../components/header/Header'
-import './Aboutme.css'
-import personalPhto from '../../components/AboutSection/PersonalPhoto.jpg'
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import React, { useState } from "react";
+import Header from '../../components/header/Header';
+import './Aboutme.css';
+import personalPhto from '../../components/AboutSection/PersonalPhoto.jpg';
+import TabAbout from "./TabAbout";
+import {data} from './CvData';
+import Footer from "../../components/Footer/Footer";
+
 
 
 function Aboutme() {
-    let tabContent = <p>Plz Select a Section to view</p>
-
+    const [selectSection, setSelectSection] = useState(0);
     
+    function handleSelectSection(selectSection) {
+        setSelectSection(selectSection)
+    }
+
+    let tabContent = <p>Plz Select a Section To View</p>
+
+    if (selectSection) {
+        tabContent = (
+            <div className='containerRow' id="tab-content-About">
+                <div className='Container tabDesc'>
+                    <h2>{data[selectSection].title}</h2>
+                    <p>{data[selectSection].desc}</p>
+                    {data[selectSection].desc2 !== null ? <p>{data[selectSection].desc2}</p> : null}
+                    {data[selectSection].desc3 !== null ? <p>{data[selectSection].desc3}</p> : null}
+                    {data[selectSection].desc4 !== null ? <p>{data[selectSection].desc4}</p> : null}
+                    {data[selectSection].desc5 !== null ? <p>{data[selectSection].desc5}</p> : null}
+                    {data[selectSection].desc6 !== null ? <p>{data[selectSection].desc6}</p> : null}
+                </div>
+            </div>
+        );
+    }
+
 
     return (
         <>
@@ -28,11 +54,51 @@ function Aboutme() {
             <div className="section ">
                 <h2 className="center">{`<My Resume />`}</h2>
                 <div className="TabButtonsAbout">
-
+                    <TabAbout 
+                    isSelected={selectSection === "OBJ"}
+                    onSelect={() => handleSelectSection('OBJ')}>
+                        Objective
+                    </TabAbout>
+                    <TabAbout 
+                    isSelected={selectSection === "EXP"}
+                    onSelect={() => handleSelectSection('EXP')}>
+                        Experience
+                    </TabAbout>
+                    <TabAbout 
+                    isSelected={selectSection === "EDU"}
+                    onSelect={() => handleSelectSection('EDU')}>
+                        Eduction
+                    </TabAbout>
+                    <TabAbout 
+                    isSelected={selectSection === "VOL"}
+                    onSelect={() => handleSelectSection('VOL')}>
+                        Volunteering
+                    </TabAbout>
+                    <TabAbout 
+                    isSelected={selectSection === "CER"}
+                    onSelect={() => handleSelectSection('CER')}>
+                        Certification
+                    </TabAbout>
+                    <TabAbout 
+                    isSelected={selectSection === "SKILLS"}
+                    onSelect={() => handleSelectSection('SKILLS')}>
+                        Skills
+                    </TabAbout>
+                    <TabAbout 
+                    isSelected={selectSection === "PROJ"}
+                    onSelect={() => handleSelectSection('PROJ')}>
+                        Project
+                    </TabAbout>
+                    <TabAbout 
+                    isSelected={selectSection === "LANG"}
+                    onSelect={() => handleSelectSection('LANG')}>
+                        Langauges
+                    </TabAbout>
                 </div>
                 <div className="center">{tabContent}</div>
             </div>
         </div>
+        <Footer></Footer>
         </>
     );
 }
