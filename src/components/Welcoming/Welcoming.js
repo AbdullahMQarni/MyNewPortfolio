@@ -10,6 +10,14 @@ import { FaLinkedin } from "react-icons/fa6";
 
 
 export default function Welcoming() {
+
+    const WhoAmI = ['Tech Content Creator', 'Web Developer', 'Web Designer', 'Data Analyst', 'Front - END Developer'];
+
+    let NamingWhoAmI = (Names) => {
+        return Math.floor(Math.random() * (Names + 1))
+    }
+
+
     return(
         <>
         <div className="Welcoming section containerRow">
@@ -20,7 +28,7 @@ export default function Welcoming() {
                     </svg>
                 </div>
             <div className="container">
-                <h3 className='textContainer'>Welcome to my website<p>I’m <span>Abdullah Alqarni,</span> MIS Fresh Graduated and Tech Content Creator</p></h3>
+                <h3 className='textContainer'>Welcome to my website<p>I’m <span>Abdullah Alqarni,</span> MIS Fresh Graduated and {WhoAmI[NamingWhoAmI(4)]}</p></h3>
             </div>
         </div>
         <div className='container'>
